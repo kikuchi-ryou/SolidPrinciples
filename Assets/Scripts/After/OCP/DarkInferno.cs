@@ -1,0 +1,9 @@
+﻿using UnityEngine;
+
+public class DarkInferno : MonoBehaviour, IEnemy
+{
+    public void ApplyDamage()
+    {
+        Debug.Log("DarkInferno");
+    }
+}

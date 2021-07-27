@@ -1,0 +1,19 @@
+@startuml
+class User {
+
+}
+
+class Rectangle {
+    +SetHeight(int height)
+    +SetWidth(int width)
+    +Area()
+}
+
+class Square {
+    +SetSize()
+}
+
+User --> Rectangle
+Rectangle <|-- Square
+
+@enduml
