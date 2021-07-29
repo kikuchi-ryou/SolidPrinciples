@@ -7,8 +7,8 @@ namespace Before.LSP
         void Start()
         {
             Rectangle rectangle = new Square();
-            rectangle.SetWidth(5);
-            rectangle.SetHeight(2);
+            rectangle.Width = 5;
+            rectangle.Height = 2;
             Debug.Assert(rectangle.Area() == 10);
         }
     }
