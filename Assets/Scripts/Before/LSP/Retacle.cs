@@ -2,22 +2,12 @@ namespace Before.LSP
 {
     public class Rectangle
     {
-        public int _height;
-        public int _width;
-
-        public virtual void SetHeight(int height)
-        {
-            _height = height;
-        }
-
-        public virtual void SetWidth(int width)
-        {
-            _width = width;
-        }
+        public virtual int Height { get; set; }
+        public virtual int Width { get; set; }
 
         public int Area()
         {
-            return _height * _width;
+            return Height * Width;
         }
     }
 }
