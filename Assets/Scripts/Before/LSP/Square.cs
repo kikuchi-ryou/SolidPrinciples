@@ -2,8 +2,8 @@ namespace Before.LSP
 {
     public class Square : Rectangle
     {
-        private int _height;
-        private int _width;
+        int _height;
+        int _width;
         public override int Height
         {
             get
