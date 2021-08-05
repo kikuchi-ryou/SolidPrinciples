@@ -1,0 +1,15 @@
+@startuml
+
+class Shooter {
+    -float _shotDelay
+    -GameObject _bullet
+    +float ShotDelay
+    +Shot(Transform origin)
+}
+
+class Movable {
+    -float _speed
+    -Rigidbody2D _rigidbody
+    +Move(Vector2 direction)
+}
+@enduml

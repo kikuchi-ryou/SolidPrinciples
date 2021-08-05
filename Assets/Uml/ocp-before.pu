@@ -1,12 +1,12 @@
 @startuml
 class Bullet {
-    OnCollisionEnter(Collision collision)
+    -OnCollisionEnter(Collision collision)
 }
 
 class Enemy {
-    ApplyDamageToShadow()
-    ApplyDamageToGigas()
-    ApplyDamageToDarkInferno()
+    +ApplyDamageToShadow()
+    +ApplyDamageToGigas()
+    +ApplyDamageToDarkInferno()
 }
 
 Bullet --> Enemy

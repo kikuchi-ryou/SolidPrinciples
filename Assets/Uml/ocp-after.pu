@@ -1,0 +1,27 @@
+@startuml
+
+class Bullet {
+    -OnCollisionEnter(Collision collision)
+}
+
+class Shadow {
+
+}
+
+class Gigas {
+
+}
+
+class DarkInferno {
+
+}
+
+interface IEnemy {
+    +ApplyDamage()
+}
+
+Bullet --> IEnemy
+IEnemy <|.. Shadow
+IEnemy <|.. Gigas
+IEnemy <|.. DarkInferno
+@enduml

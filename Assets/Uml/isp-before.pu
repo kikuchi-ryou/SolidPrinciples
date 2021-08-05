@@ -1,0 +1,24 @@
+@startuml
+interface IEnemy {
+    +Attack()
+    +Guard()
+    +Walk()
+    +Fly()
+}
+
+class Shadow {
+
+}
+
+class Gigas {
+
+}
+
+class DarkInferno {
+
+}
+
+IEnemy <|.. Shadow
+IEnemy <|.. Gigas
+IEnemy <|.. DarkInferno
+@enduml

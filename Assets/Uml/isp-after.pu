@@ -1,0 +1,40 @@
+@startuml
+interface IAttack {
+    +Attack()
+}
+
+interface IGuard {
+    +Guard()
+}
+
+interface IWalk {
+    +Walk()
+}
+
+interface IFly {
+    +Fly()
+}
+
+class Shadow {
+
+}
+
+class Gigas {
+
+}
+
+class DarkInferno {
+
+}
+
+IAttack <|.. Shadow
+IGuard <|.. Shadow
+IWalk <|.. Shadow
+IAttack <|.. Gigas
+IGuard <|.. Gigas
+IWalk <|.. Gigas
+IFly  <|.. Gigas
+IAttack <|.. DarkInferno
+IGuard <|.. DarkInferno
+IFly  <|.. DarkInferno
+@enduml

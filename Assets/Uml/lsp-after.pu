@@ -1,0 +1,24 @@
+@startuml
+
+interface IShape {
+    Area()
+}
+
+class Rectangle {
+    +<<property>> Height : int
+    +<<property>> Width : int
+}
+
+class Square {
+    +<<property>> SideLength : int
+}
+
+class User {
+
+}
+
+User ..> IShape
+IShape <|.. Rectangle
+IShape <|.. Square
+
+@enduml

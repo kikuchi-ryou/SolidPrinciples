@@ -4,13 +4,16 @@ class User {
 }
 
 class Rectangle {
-    +SetHeight(int height)
-    +SetWidth(int width)
+    +<<property>> Height : int
+    +<<property>> Width : int
     +Area()
 }
 
 class Square {
-    +SetSize()
+    -_height : int
+    -_width : int
+    +<<property>> Height : int
+    +<<property>> Width : int
 }
 
 User --> Rectangle
