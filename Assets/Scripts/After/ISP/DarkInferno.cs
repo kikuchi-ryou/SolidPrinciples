@@ -1,0 +1,17 @@
+using UnityEngine;
+
+namespace After.ISP
+{
+    public class DarkInferno : IAttack, IFly
+    {
+        public void Attack()
+        {
+            Debug.Log("ダークインフェルノの攻撃");
+        }
+
+        public void Fly()
+        {
+            Debug.Log("ダークインフェルノが空を飛んで移動");
+        }
+    }
+}
