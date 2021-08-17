@@ -1,0 +1,13 @@
+using After.DIP.Player;
+using UnityEngine;
+
+namespace After.DIP.Attack
+{
+    public class SlashAttack : IAttack
+    {
+        public void ApplyDamage()
+        {
+            Debug.Log("斬撃攻撃でダメージを与える");
+        }
+    }
+}
