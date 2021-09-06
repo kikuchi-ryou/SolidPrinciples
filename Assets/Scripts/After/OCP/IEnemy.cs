@@ -1,4 +1,7 @@
-﻿public interface IEnemy
+﻿namespace After.OCP
 {
-    void ApplyDamage();
+    public interface IEnemy
+    {
+        void ApplyDamage();
+    }
 }

@@ -1,9 +1,12 @@
 ﻿using UnityEngine;
 
-public class Gigas : MonoBehaviour, IEnemy
+namespace After.OCP
 {
-    public void ApplyDamage()
+    public class Gigas : MonoBehaviour, IEnemy
     {
-        Debug.Log("Gigas");
+        public void ApplyDamage()
+        {
+            Debug.Log("Gigas");
+        }
     }
 }

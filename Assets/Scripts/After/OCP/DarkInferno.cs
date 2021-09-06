@@ -1,9 +1,12 @@
 ﻿using UnityEngine;
 
-public class DarkInferno : MonoBehaviour, IEnemy
+namespace After.OCP
 {
-    public void ApplyDamage()
+    public class DarkInferno : IEnemy
     {
-        Debug.Log("DarkInferno");
+        public void ApplyDamage()
+        {
+            Debug.Log("DarkInferno");
+        }
     }
 }

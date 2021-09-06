@@ -1,9 +1,12 @@
 ﻿using UnityEngine;
 
-public class Shadow : MonoBehaviour, IEnemy
+namespace After.OCP
 {
-    public void ApplyDamage()
+    public class Shadow : MonoBehaviour, IEnemy
     {
-        Debug.Log("Shadow");
+        public void ApplyDamage()
+        {
+            Debug.Log("Shadow");
+        }
     }
 }
